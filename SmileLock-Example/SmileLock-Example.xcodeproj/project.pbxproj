@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840946141E41AEDF007E96EA /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840946111E41AEDF007E96EA /* DataExtension.swift */; };
+		840946151E41AEDF007E96EA /* RLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840946121E41AEDF007E96EA /* RLHelper.swift */; };
+		840946161E41AEDF007E96EA /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840946131E41AEDF007E96EA /* UIExtension.swift */; };
+		842DCC5D1E41B65200EE0864 /* BlurKeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DCC5C1E41B65200EE0864 /* BlurKeyboardController.swift */; };
+		842DCC5F1E41B66F00EE0864 /* KeyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DCC5E1E41B66F00EE0864 /* KeyboardController.swift */; };
+		842DCC611E41C08C00EE0864 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842DCC601E41C08C00EE0864 /* PasswordValidator.swift */; };
+		848744141E41A53A0084F76D /* PasswordContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848744131E41A53A0084F76D /* PasswordContainerView.xib */; };
+		84D35D5F1E4197B600B5ECA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D5E1E4197B600B5ECA5 /* AppDelegate.swift */; };
+		84D35D611E4197B600B5ECA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D601E4197B600B5ECA5 /* ViewController.swift */; };
+		84D35D641E4197B600B5ECA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D35D621E4197B600B5ECA5 /* Main.storyboard */; };
+		84D35D661E4197B600B5ECA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D35D651E4197B600B5ECA5 /* Assets.xcassets */; };
+		84D35D691E4197B600B5ECA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D35D671E4197B600B5ECA5 /* LaunchScreen.storyboard */; };
+		84D35D741E4197B600B5ECA5 /* SmileLock_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D731E4197B600B5ECA5 /* SmileLock_ExampleTests.swift */; };
+		84D35D7F1E4197B600B5ECA5 /* SmileLock_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D7E1E4197B600B5ECA5 /* SmileLock_ExampleUITests.swift */; };
+		84D35D951E4197CE00B5ECA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D35D8E1E4197CE00B5ECA5 /* Assets.xcassets */; };
+		84D35D971E4197CE00B5ECA5 /* PasswordContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D911E4197CE00B5ECA5 /* PasswordContainerView.swift */; };
+		84D35D981E4197CE00B5ECA5 /* PasswordDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D921E4197CE00B5ECA5 /* PasswordDotView.swift */; };
+		84D35D991E4197CE00B5ECA5 /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D931E4197CE00B5ECA5 /* PasswordInputView.swift */; };
+		84D35D9A1E4197CE00B5ECA5 /* PasswordUIValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35D941E4197CE00B5ECA5 /* PasswordUIValidation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D35D701E4197B600B5ECA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D35D531E4197B600B5ECA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D35D5A1E4197B600B5ECA5;
+			remoteInfo = "SmileLock-Example";
+		};
+		84D35D7B1E4197B600B5ECA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D35D531E4197B600B5ECA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D35D5A1E4197B600B5ECA5;
+			remoteInfo = "SmileLock-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840946111E41AEDF007E96EA /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		840946121E41AEDF007E96EA /* RLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLHelper.swift; sourceTree = "<group>"; };
+		840946131E41AEDF007E96EA /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		842DCC5C1E41B65200EE0864 /* BlurKeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurKeyboardController.swift; sourceTree = "<group>"; };
+		842DCC5E1E41B66F00EE0864 /* KeyboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
+		842DCC601E41C08C00EE0864 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		848744131E41A53A0084F76D /* PasswordContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordContainerView.xib; sourceTree = "<group>"; };
+		84D35D5B1E4197B600B5ECA5 /* SmileLock-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmileLock-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D35D5E1E4197B600B5ECA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84D35D601E4197B600B5ECA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84D35D631E4197B600B5ECA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84D35D651E4197B600B5ECA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D35D681E4197B600B5ECA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84D35D6A1E4197B600B5ECA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D35D6F1E4197B600B5ECA5 /* SmileLock-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmileLock-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D35D731E4197B600B5ECA5 /* SmileLock_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileLock_ExampleTests.swift; sourceTree = "<group>"; };
+		84D35D751E4197B600B5ECA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D35D7A1E4197B600B5ECA5 /* SmileLock-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SmileLock-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D35D7E1E4197B600B5ECA5 /* SmileLock_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileLock_ExampleUITests.swift; sourceTree = "<group>"; };
+		84D35D801E4197B600B5ECA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D35D8E1E4197CE00B5ECA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D35D911E4197CE00B5ECA5 /* PasswordContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordContainerView.swift; sourceTree = "<group>"; };
+		84D35D921E4197CE00B5ECA5 /* PasswordDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordDotView.swift; sourceTree = "<group>"; };
+		84D35D931E4197CE00B5ECA5 /* PasswordInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
+		84D35D941E4197CE00B5ECA5 /* PasswordUIValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordUIValidation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84D35D581E4197B600B5ECA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D35D6C1E4197B600B5ECA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D35D771E4197B600B5ECA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840946101E41AEDF007E96EA /* RLHelper */ = {
+			isa = PBXGroup;
+			children = (
+				840946111E41AEDF007E96EA /* DataExtension.swift */,
+				840946121E41AEDF007E96EA /* RLHelper.swift */,
+				840946131E41AEDF007E96EA /* UIExtension.swift */,
+			);
+			path = RLHelper;
+			sourceTree = "<group>";
+		};
+		84D35D521E4197B600B5ECA5 = {
+			isa = PBXGroup;
+			children = (
+				84D35D5D1E4197B600B5ECA5 /* SmileLock-Example */,
+				84D35D721E4197B600B5ECA5 /* SmileLock-ExampleTests */,
+				84D35D7D1E4197B600B5ECA5 /* SmileLock-ExampleUITests */,
+				84D35D5C1E4197B600B5ECA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84D35D5C1E4197B600B5ECA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D5B1E4197B600B5ECA5 /* SmileLock-Example.app */,
+				84D35D6F1E4197B600B5ECA5 /* SmileLock-ExampleTests.xctest */,
+				84D35D7A1E4197B600B5ECA5 /* SmileLock-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D35D5D1E4197B600B5ECA5 /* SmileLock-Example */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D5E1E4197B600B5ECA5 /* AppDelegate.swift */,
+				84D35D601E4197B600B5ECA5 /* ViewController.swift */,
+				842DCC5E1E41B66F00EE0864 /* KeyboardController.swift */,
+				842DCC5C1E41B65200EE0864 /* BlurKeyboardController.swift */,
+				842DCC601E41C08C00EE0864 /* PasswordValidator.swift */,
+				84D35D621E4197B600B5ECA5 /* Main.storyboard */,
+				84D35D651E4197B600B5ECA5 /* Assets.xcassets */,
+				84D35D671E4197B600B5ECA5 /* LaunchScreen.storyboard */,
+				84D35D6A1E4197B600B5ECA5 /* Info.plist */,
+				840946101E41AEDF007E96EA /* RLHelper */,
+				84D35D8C1E4197CE00B5ECA5 /* SmileLock */,
+			);
+			path = "SmileLock-Example";
+			sourceTree = "<group>";
+		};
+		84D35D721E4197B600B5ECA5 /* SmileLock-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D731E4197B600B5ECA5 /* SmileLock_ExampleTests.swift */,
+				84D35D751E4197B600B5ECA5 /* Info.plist */,
+			);
+			path = "SmileLock-ExampleTests";
+			sourceTree = "<group>";
+		};
+		84D35D7D1E4197B600B5ECA5 /* SmileLock-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D7E1E4197B600B5ECA5 /* SmileLock_ExampleUITests.swift */,
+				84D35D801E4197B600B5ECA5 /* Info.plist */,
+			);
+			path = "SmileLock-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		84D35D8C1E4197CE00B5ECA5 /* SmileLock */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D8D1E4197CE00B5ECA5 /* Assets */,
+				84D35D901E4197CE00B5ECA5 /* Classes */,
+			);
+			path = SmileLock;
+			sourceTree = "<group>";
+		};
+		84D35D8D1E4197CE00B5ECA5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D8E1E4197CE00B5ECA5 /* Assets.xcassets */,
+				848744131E41A53A0084F76D /* PasswordContainerView.xib */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		84D35D901E4197CE00B5ECA5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84D35D911E4197CE00B5ECA5 /* PasswordContainerView.swift */,
+				84D35D921E4197CE00B5ECA5 /* PasswordDotView.swift */,
+				84D35D931E4197CE00B5ECA5 /* PasswordInputView.swift */,
+				84D35D941E4197CE00B5ECA5 /* PasswordUIValidation.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D35D5A1E4197B600B5ECA5 /* SmileLock-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D35D831E4197B600B5ECA5 /* Build configuration list for PBXNativeTarget "SmileLock-Example" */;
+			buildPhases = (
+				84D35D571E4197B600B5ECA5 /* Sources */,
+				84D35D581E4197B600B5ECA5 /* Frameworks */,
+				84D35D591E4197B600B5ECA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmileLock-Example";
+			productName = "SmileLock-Example";
+			productReference = 84D35D5B1E4197B600B5ECA5 /* SmileLock-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84D35D6E1E4197B600B5ECA5 /* SmileLock-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D35D861E4197B600B5ECA5 /* Build configuration list for PBXNativeTarget "SmileLock-ExampleTests" */;
+			buildPhases = (
+				84D35D6B1E4197B600B5ECA5 /* Sources */,
+				84D35D6C1E4197B600B5ECA5 /* Frameworks */,
+				84D35D6D1E4197B600B5ECA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D35D711E4197B600B5ECA5 /* PBXTargetDependency */,
+			);
+			name = "SmileLock-ExampleTests";
+			productName = "SmileLock-ExampleTests";
+			productReference = 84D35D6F1E4197B600B5ECA5 /* SmileLock-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84D35D791E4197B600B5ECA5 /* SmileLock-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D35D891E4197B600B5ECA5 /* Build configuration list for PBXNativeTarget "SmileLock-ExampleUITests" */;
+			buildPhases = (
+				84D35D761E4197B600B5ECA5 /* Sources */,
+				84D35D771E4197B600B5ECA5 /* Frameworks */,
+				84D35D781E4197B600B5ECA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D35D7C1E4197B600B5ECA5 /* PBXTargetDependency */,
+			);
+			name = "SmileLock-ExampleUITests";
+			productName = "SmileLock-ExampleUITests";
+			productReference = 84D35D7A1E4197B600B5ECA5 /* SmileLock-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D35D531E4197B600B5ECA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = raniys;
+				TargetAttributes = {
+					84D35D5A1E4197B600B5ECA5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					84D35D6E1E4197B600B5ECA5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 84D35D5A1E4197B600B5ECA5;
+					};
+					84D35D791E4197B600B5ECA5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 84D35D5A1E4197B600B5ECA5;
+					};
+				};
+			};
+			buildConfigurationList = 84D35D561E4197B600B5ECA5 /* Build configuration list for PBXProject "SmileLock-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84D35D521E4197B600B5ECA5;
+			productRefGroup = 84D35D5C1E4197B600B5ECA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D35D5A1E4197B600B5ECA5 /* SmileLock-Example */,
+				84D35D6E1E4197B600B5ECA5 /* SmileLock-ExampleTests */,
+				84D35D791E4197B600B5ECA5 /* SmileLock-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D35D591E4197B600B5ECA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D35D691E4197B600B5ECA5 /* LaunchScreen.storyboard in Resources */,
+				84D35D661E4197B600B5ECA5 /* Assets.xcassets in Resources */,
+				84D35D951E4197CE00B5ECA5 /* Assets.xcassets in Resources */,
+				84D35D641E4197B600B5ECA5 /* Main.storyboard in Resources */,
+				848744141E41A53A0084F76D /* PasswordContainerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D35D6D1E4197B600B5ECA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D35D781E4197B600B5ECA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D35D571E4197B600B5ECA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D35D611E4197B600B5ECA5 /* ViewController.swift in Sources */,
+				84D35D991E4197CE00B5ECA5 /* PasswordInputView.swift in Sources */,
+				84D35D981E4197CE00B5ECA5 /* PasswordDotView.swift in Sources */,
+				84D35D9A1E4197CE00B5ECA5 /* PasswordUIValidation.swift in Sources */,
+				840946161E41AEDF007E96EA /* UIExtension.swift in Sources */,
+				840946141E41AEDF007E96EA /* DataExtension.swift in Sources */,
+				84D35D971E4197CE00B5ECA5 /* PasswordContainerView.swift in Sources */,
+				842DCC611E41C08C00EE0864 /* PasswordValidator.swift in Sources */,
+				84D35D5F1E4197B600B5ECA5 /* AppDelegate.swift in Sources */,
+				842DCC5F1E41B66F00EE0864 /* KeyboardController.swift in Sources */,
+				840946151E41AEDF007E96EA /* RLHelper.swift in Sources */,
+				842DCC5D1E41B65200EE0864 /* BlurKeyboardController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D35D6B1E4197B600B5ECA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D35D741E4197B600B5ECA5 /* SmileLock_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D35D761E4197B600B5ECA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D35D7F1E4197B600B5ECA5 /* SmileLock_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D35D711E4197B600B5ECA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D35D5A1E4197B600B5ECA5 /* SmileLock-Example */;
+			targetProxy = 84D35D701E4197B600B5ECA5 /* PBXContainerItemProxy */;
+		};
+		84D35D7C1E4197B600B5ECA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D35D5A1E4197B600B5ECA5 /* SmileLock-Example */;
+			targetProxy = 84D35D7B1E4197B600B5ECA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84D35D621E4197B600B5ECA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D35D631E4197B600B5ECA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84D35D671E4197B600B5ECA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D35D681E4197B600B5ECA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D35D811E4197B600B5ECA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84D35D821E4197B600B5ECA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84D35D841E4197B600B5ECA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SmileLock-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raniys.SmileLock-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84D35D851E4197B600B5ECA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SmileLock-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raniys.SmileLock-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84D35D871E4197B600B5ECA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SmileLock-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raniys.SmileLock-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileLock-Example.app/SmileLock-Example";
+			};
+			name = Debug;
+		};
+		84D35D881E4197B600B5ECA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SmileLock-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raniys.SmileLock-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileLock-Example.app/SmileLock-Example";
+			};
+			name = Release;
+		};
+		84D35D8A1E4197B600B5ECA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SmileLock-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raniys.SmileLock-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SmileLock-Example";
+			};
+			name = Debug;
+		};
+		84D35D8B1E4197B600B5ECA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SmileLock-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "raniys.SmileLock-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SmileLock-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D35D561E4197B600B5ECA5 /* Build configuration list for PBXProject "SmileLock-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D35D811E4197B600B5ECA5 /* Debug */,
+				84D35D821E4197B600B5ECA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D35D831E4197B600B5ECA5 /* Build configuration list for PBXNativeTarget "SmileLock-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D35D841E4197B600B5ECA5 /* Debug */,
+				84D35D851E4197B600B5ECA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D35D861E4197B600B5ECA5 /* Build configuration list for PBXNativeTarget "SmileLock-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D35D871E4197B600B5ECA5 /* Debug */,
+				84D35D881E4197B600B5ECA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D35D891E4197B600B5ECA5 /* Build configuration list for PBXNativeTarget "SmileLock-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D35D8A1E4197B600B5ECA5 /* Debug */,
+				84D35D8B1E4197B600B5ECA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84D35D531E4197B600B5ECA5 /* Project object */;
+}
