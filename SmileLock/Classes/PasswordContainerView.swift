@@ -80,12 +80,12 @@ public class PasswordContainerView: UIView {
     private let kDefaultHeight: CGFloat = 410
     private var widthConstraint: NSLayoutConstraint!
     
-    private func configureConstraints() {
-        let ratioConstraint = widthAnchor.constraintEqualToAnchor(self.heightAnchor, multiplier: kDefaultWidth / kDefaultHeight)
-        self.widthConstraint = widthAnchor.constraintEqualToConstant(kDefaultWidth)
-        self.widthConstraint.priority = 999
-        NSLayoutConstraint.activateConstraints([ratioConstraint, widthConstraint])
-    }
+//    private func configureConstraints() {
+//        let ratioConstraint = widthAnchor.constraintEqualToAnchor(self.heightAnchor, multiplier: kDefaultWidth / kDefaultHeight)
+//        self.widthConstraint = widthAnchor.constraintEqualToConstant(kDefaultWidth)
+//        self.widthConstraint.priority = 999
+//        NSLayoutConstraint.activateConstraints([ratioConstraint, widthConstraint])
+//    }
     
     //MARK: VisualEffect
     public func rearrangeForVisualEffectView(in vc: UIViewController) {
@@ -109,16 +109,16 @@ public class PasswordContainerView: UIView {
         return view
     }
     
-    public class func create(in stackView: UIStackView, digit: Int) -> PasswordContainerView {
+    public class func create(in containerView: UIView, digit: Int) -> PasswordContainerView {
         let passwordContainerView = create(withDigit: digit)
-        stackView.addArrangedSubview(passwordContainerView)
+        containerView.addSubview(passwordContainerView)
         return passwordContainerView
     }
     
     //MARK: Life Cycle
     public override func awakeFromNib() {
         super.awakeFromNib()
-        configureConstraints()
+//        configureConstraints()
         backgroundColor = UIColor.clearColor()
         passwordInputViews.forEach {
             $0.delegate = self

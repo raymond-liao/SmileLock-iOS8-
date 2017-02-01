@@ -14,8 +14,8 @@ public class PasswordUIValidation<T>: PasswordInputCompleteProtocol {
     
     public var view: PasswordContainerView!
     
-    public init(in stackView: UIStackView, width: CGFloat? = nil, digit: Int) {
-        view = PasswordContainerView.create(in: stackView, digit: digit)
+    public init(in containerView: UIView, width: CGFloat? = nil, digit: Int) {
+        view = PasswordContainerView.create(in: containerView, digit: digit)
         view.delegate = self
         guard let width = width else { return }
         view.width = width

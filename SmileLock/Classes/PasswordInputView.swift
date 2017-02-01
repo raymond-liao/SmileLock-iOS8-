@@ -102,7 +102,11 @@ public class PasswordInputView: UIView {
         
         //update label
         label.text = numberString
-        label.font = UIFont.systemFontOfSize(radius * fontSizeRatio, weight: UIFontWeightThin)
+        if #available(iOS 8.2, *) {
+            label.font = UIFont.systemFontOfSize(radius * fontSizeRatio, weight: UIFontWeightThin)
+        } else {
+            label.font = UIFont.systemFontOfSize(radius * fontSizeRatio)
+        }
         label.textColor = textColor
         
         //update circle view
@@ -143,7 +147,11 @@ private extension PasswordInputView {
     //MARK: Animation
     func touchDownAction() {
         let originFont = label.font
-        label.font = UIFont.systemFontOfSize(originFont!.pointSize, weight: UIFontWeightLight)
+        if #available(iOS 8.2, *) {
+            label.font = UIFont.systemFontOfSize(originFont!.pointSize, weight: UIFontWeightLight)
+        } else {
+            label.font = UIFont.systemFontOfSize(originFont!.pointSize)
+        }
         label.textColor = highlightTextColor
         if !self.isVibrancyEffect {
             backgroundColor = highlightBackgroundColor
@@ -153,7 +161,11 @@ private extension PasswordInputView {
     
     func touchUpAction() {
         let originFont = label.font
-        label.font = UIFont.systemFontOfSize(originFont!.pointSize, weight: UIFontWeightThin)
+        if #available(iOS 8.2, *) {
+            label.font = UIFont.systemFontOfSize(originFont!.pointSize, weight: UIFontWeightThin)
+        } else {
+            label.font = UIFont.systemFontOfSize(originFont!.pointSize)
+        }
         label.textColor = textColor
         backgroundColor = borderColor
         circleView.backgroundColor = circleBackgroundColor
@@ -191,10 +203,10 @@ private extension PasswordInputView {
 internal extension NSLayoutConstraint {
     class func addConstraints(fromView view: UIView, toView baseView: UIView, constraintInsets insets: UIEdgeInsets) {
         NSLayoutConstraint.activateConstraints([
-            NSLayoutConstraint(item: view, attribute: .Top, relatedBy: .Equal, toItem: baseView, attribute: .Top, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: view, attribute: .Left, relatedBy: .Equal, toItem: baseView, attribute: .Left, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: view, attribute: .Width, relatedBy: .Equal, toItem: baseView, attribute: .Width, multiplier: 1.0, constant: 0),
-            NSLayoutConstraint(item: view, attribute: .Height, relatedBy: .Equal, toItem: baseView, attribute: .Height, multiplier: 1.0, constant:0)
+            NSLayoutConstraint(item: view, attribute: .Top, relatedBy: .Equal, toItem: baseView, attribute: .Top, multiplier: 1.0, constant: insets.top),
+            NSLayoutConstraint(item: view, attribute: .Left, relatedBy: .Equal, toItem: baseView, attribute: .Left, multiplier: 1.0, constant: insets.left),
+            NSLayoutConstraint(item: view, attribute: .Bottom, relatedBy: .Equal, toItem: baseView, attribute: .Bottom, multiplier: 1.0, constant: insets.bottom),
+            NSLayoutConstraint(item: view, attribute: .Right, relatedBy: .Equal, toItem: baseView, attribute: .Right, multiplier: 1.0, constant:insets.right)
             ])
     }
     
