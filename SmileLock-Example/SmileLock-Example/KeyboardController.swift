@@ -10,7 +10,7 @@ import UIKit
 
 class KeyboardController: UIViewController {
     
-    @IBOutlet weak var passwordStackView: UIStackView!
+    @IBOutlet weak var keyboardContainer: UIView!
     
     //MARK: Property
     var passwordUIValidator: PasswordValidator!
@@ -19,8 +19,7 @@ class KeyboardController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        passwordUIValidator = PasswordValidator(in: passwordStackView, digit: kPasswordDigit)
-    
+        passwordUIValidator = PasswordValidator(in: keyboardContainer, digit: kPasswordDigit)
         passwordUIValidator.success = { [weak self] _ in
             print("*️⃣ success!")
             self?.dismissViewControllerAnimated(true, completion: nil)

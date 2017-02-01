@@ -16,8 +16,8 @@ class PasswordModel {
 }
 
 class PasswordValidator: PasswordUIValidation<PasswordModel> {
-    init(in stackView: UIStackView, digit: Int) {
-        super.init(in: stackView, digit: digit)
+    init(in containerView: UIView, digit: Int) {
+        super.init(in: containerView, digit: digit)
         self.validation = { password in
             PasswordModel.match(password)
         }

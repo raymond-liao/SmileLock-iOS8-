@@ -10,7 +10,7 @@ import UIKit
 
 class BlurKeyboardController: UIViewController {
     
-    @IBOutlet weak var passwordStackView: UIStackView!
+    @IBOutlet weak var keyboardContainer: UIView!
     
     //MARK: Property
     var passwordUIValidator: PasswordValidator!
@@ -19,7 +19,7 @@ class BlurKeyboardController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        passwordUIValidator = PasswordValidator(in: passwordStackView, digit: kPasswordDigit)
+        passwordUIValidator = PasswordValidator(in: keyboardContainer, digit: kPasswordDigit)
         
         passwordUIValidator.success = { [weak self] _ in
             print("*️⃣ success!")
